@@ -1,0 +1,54 @@
+site_name: my-PySelects
+site_description: My personal selection of Python packages I recommend, enjoy, or consider valuable to explore and use.
+repo_url: https://github.com/maciejszwalgin/my-PySelects
+repo_name: maciejszwalgin/my-PySelects
+site_url: https://maciejszwalgin.github.io/my-PySelects/
+
+strict: true
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: yellow
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: yellow
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - tags
+  - include-markdown

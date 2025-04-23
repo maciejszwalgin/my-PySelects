@@ -1,0 +1,13 @@
+[project]
+name = "my-pyselects"
+version = "0.1.0"
+description = "My personal selection of Python packages I recommend, enjoy, or consider valuable to explore and use."
+authors = [
+    {name = "Maciej Szwalgin"}
+]
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.12",
+    "pymdown-extensions>=10.14.3",
+    "mkdocs-include-markdown-plugin>=4.0.4"
+]
