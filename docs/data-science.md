@@ -93,9 +93,31 @@ result = df.groupby('category').agg([
 ])
 ```
 
-<!-- ## Data Visualization
+## Data Visualization
 
-My recommended data visualization tools: -->
+My recommended data visualization tools: 
+
+### [Apache Superset](https://superset.apache.org/)
+
+Apache Superset is a modern, enterprise-ready open source business intelligence web application.
+
+**Why I recommend it:**
+
+- Modern, enterprise-ready
+- Intuitive interface
+- Wide range of visualizations
+- SQL IDE
+- Robust security
+- Scalable
+
+**Key Features:**
+
+- 🎨 Beautiful interface
+- 📚 Dashboards and charts creation
+- 📊 Wide range of visualizations
+- 🔐 Users and Roles management
+- 🚀 Support for multiple data sources
+- 📜 Open source business intelligence
 
 <!-- ## Machine Learning
 
