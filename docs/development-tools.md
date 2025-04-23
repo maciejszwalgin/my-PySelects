@@ -1,87 +1,5 @@
 # Development Tools
 
-## Package Management
-
-My recommended package management tools:
-
-### [🌟 UV](https://github.com/astral-sh/uv) - Recommended!
-
-**Why I recommend it:**
-
-- Lightning-fast package installer written in Rust
-- Drop-in replacement for pip/pip-tools
-- Modern dependency resolver
-- Seamless integration with pip ecosystem
-- Active development by Astral (Ruff creators)
-
-**Key Features:**
-
-- 🚀 15-20x faster than pip
-- 📦 Compatible with pip, pip-tools workflow
-- 🔒 Deterministic builds
-- 🔄 Smart caching
-- 🛠️ Built-in venv management
-
-**Quick Example:**
-```bash
-# Create and activate a virtual environment
-uv venv
-uv pip install -r requirements.txt
-
-# Or use it with pip-tools style workflow
-uv pip compile pyproject.toml -o requirements.txt
-```
-
-### [Poetry](https://python-poetry.org/)
-
-**Why it's notable:**
-
-- Dependency management and packaging in one tool
-- Modern project management
-- Built-in virtual environment handling
-- Great for publishing packages
-
-**Key Features:**
-
-- 📦 Dependency resolution
-- 🔒 Lock file for reproducible builds
-- 🚀 Publishing to PyPI
-- 🛠️ Project scaffolding
-
-### [Build](https://pypa-build.readthedocs.io/)
-
-**Why it's notable:**
-
-- Standard-compliant package builder
-- PEP 517 implementation
-- Simple and focused tool
-- Works with any build backend
-
-**Key Features:**
-
-- 🏗️ PEP 517 compliance
-- 🔧 Backend agnostic
-- 📦 Isolated builds
-- 🚀 Simple interface
-
-### [Wheel](https://wheel.readthedocs.io/)
-
-**Why it's notable:**
-
-- Built distribution format standard
-- Faster installation than source distributions
-- Cross-platform compatibility
-- Industry standard
-
-**Key Features:**
-
-- 📦 Binary distribution format
-- 🚀 Fast installation
-- 🔄 Cross-platform support
-- 🔧 PEP 427 compliance
-
-**Note:** While all these tools are valuable, I particularly recommend UV for its exceptional speed and compatibility with existing workflows. It's a modern alternative that works seamlessly with traditional pip-based tooling while providing significant performance improvements.
-
 ## Code Analysis
 
 My recommended code analysis tools:
@@ -197,6 +115,88 @@ repos:
     - id: mypy
       additional_dependencies: [types-all]
 ```
+
+## Package Management
+
+My recommended package management tools:
+
+### [🌟 UV](https://github.com/astral-sh/uv) - Recommended!
+
+**Why I recommend it:**
+
+- Lightning-fast package installer written in Rust
+- Drop-in replacement for pip/pip-tools
+- Modern dependency resolver
+- Seamless integration with pip ecosystem
+- Active development by Astral (Ruff creators)
+
+**Key Features:**
+
+- 🚀 15-20x faster than pip
+- 📦 Compatible with pip, pip-tools workflow
+- 🔒 Deterministic builds
+- 🔄 Smart caching
+- 🛠️ Built-in venv management
+
+**Quick Example:**
+```bash
+# Create and activate a virtual environment
+uv venv
+uv pip install -r requirements.txt
+
+# Or use it with pip-tools style workflow
+uv pip compile pyproject.toml -o requirements.txt
+```
+
+### [Poetry](https://python-poetry.org/)
+
+**Why it's notable:**
+
+- Dependency management and packaging in one tool
+- Modern project management
+- Built-in virtual environment handling
+- Great for publishing packages
+
+**Key Features:**
+
+- 📦 Dependency resolution
+- 🔒 Lock file for reproducible builds
+- 🚀 Publishing to PyPI
+- 🛠️ Project scaffolding
+
+### [Build](https://pypa-build.readthedocs.io/)
+
+**Why it's notable:**
+
+- Standard-compliant package builder
+- PEP 517 implementation
+- Simple and focused tool
+- Works with any build backend
+
+**Key Features:**
+
+- 🏗️ PEP 517 compliance
+- 🔧 Backend agnostic
+- 📦 Isolated builds
+- 🚀 Simple interface
+
+### [Wheel](https://wheel.readthedocs.io/)
+
+**Why it's notable:**
+
+- Built distribution format standard
+- Faster installation than source distributions
+- Cross-platform compatibility
+- Industry standard
+
+**Key Features:**
+
+- 📦 Binary distribution format
+- 🚀 Fast installation
+- 🔄 Cross-platform support
+- 🔧 PEP 427 compliance
+
+**Note:** While all these tools are valuable, I particularly recommend UV for its exceptional speed and compatibility with existing workflows. It's a modern alternative that works seamlessly with traditional pip-based tooling while providing significant performance improvements.
 
 ## Testing
 
