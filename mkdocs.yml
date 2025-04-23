@@ -8,6 +8,13 @@ strict: true
 
 nav:
   - Home: index.md
+  - Development Tools: development-tools.md
+  - Data Science: data-science.md
+  - Web & Admin: admin-and-frameworks.md
+  # - Databases: databases.md
+  - DevOps: devops.md
+  - Utilities: utils.md
+  # - Specialized: specialized.md
 
 theme:
   name: material

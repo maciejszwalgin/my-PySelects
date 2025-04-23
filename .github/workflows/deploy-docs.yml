@@ -2,8 +2,8 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set this to your default branch
-  workflow_dispatch:  # Allows manual triggering
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs-material pymdown-extensions
+          pip install "."
           
       - name: Deploy documentation
         run: mkdocs gh-deploy --force
