@@ -65,6 +65,33 @@ class ProcessData(luigi.Task):
 
 My recommended environment management tools:
 
+### [UV](https://github.com/astral-sh/uv) - Recommended!
+
+**Why I recommend it:**
+
+- Ultra-fast Python environment and package manager
+- Compatible with pip and requirements.txt
+- Lockfile support for reproducible installs
+- Simple CLI usage
+- Cross-platform
+
+**Key Features:**
+
+- 🚀 Speed
+- 🔒 Lockfile support
+- 🐍 Virtualenv management
+- 📦 Package installation
+- 🔄 Pip compatibility
+
+**Quick Example:**
+```bash
+# Install uv (one-liner)
+pip install uv
+
+# Create a new virtual environment
+uv venv .venv
+```
+
 ### [pyenv](https://github.com/pyenv/pyenv)
 
 **Why I recommend it:**
