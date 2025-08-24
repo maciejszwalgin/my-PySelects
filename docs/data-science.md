@@ -123,9 +123,51 @@ Apache Superset is a modern, enterprise-ready open source business intelligence 
 
 My recommended machine learning libraries: -->
 
-<!-- ## Deep Learning
+## Deep Learning
 
-My recommended deep learning frameworks: -->
+My recommended deep learning frameworks:
+
+### [TensorFlow](https://www.tensorflow.org/)
+
+TensorFlow is a leading open-source platform for machine learning and deep learning developed by Google.
+
+**Why I recommend it:**
+
+- Industry standard for deep learning
+- Extensive ecosystem and tools
+- Scalable from research to production
+- Supports CPUs, GPUs, and TPUs
+- Large community and resources
+
+**Key Features:**
+
+- 🤖 Flexible model building (Keras and low-level APIs)
+- 🚀 Efficient computation on multiple devices
+- 🛠️ Model deployment (TensorFlow Lite, TensorFlow.js, TensorFlow Serving)
+- 📊 Visualization with TensorBoard
+- 🌐 Integration with other ML tools
+
+**Quick Example:**
+```python
+import tensorflow as tf
+
+# Build a simple sequential model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, activation='relu', input_shape=(10,)),
+    tf.keras.layers.Dense(1)
+])
+
+model.compile(optimizer='adam', loss='mse')
+
+# Dummy data
+import numpy as np
+x = np.random.rand(100, 10)
+y = np.random.rand(100, 1)
+
+# Train the model
+model.fit(x, y, epochs=5)
+```
+
 
 <!-- ## Scientific Libraries
 
