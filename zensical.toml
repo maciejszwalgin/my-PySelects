@@ -1,0 +1,55 @@
+[project]
+site_name = "my-PySelects"
+site_description = "My personal selection of Python packages I recommend, enjoy, or consider valuable to explore and use."
+site_url = "https://maciejszwalgin.github.io/my-PySelects/"
+repo_url = "https://github.com/maciejszwalgin/my-PySelects"
+repo_name = "maciejszwalgin/my-PySelects"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Development Tools" = "development-tools.md" },
+  { "Data Science" = "data-science.md" },
+  { "Web & Admin" = "admin-and-frameworks.md" },
+  { "Databases" = "databases.md" },
+  { "DevOps" = "devops.md" },
+  { "Utilities" = "utils.md" },
+]
+
+[project.theme]
+variant = "classic"
+features = [
+  "navigation.instant",
+  "navigation.tracking",
+  "navigation.sections",
+  "navigation.indexes",
+  "toc.follow",
+  "search.highlight",
+  "content.code.copy",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "purple"
+accent = "yellow"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "purple"
+accent = "yellow"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+base_path = ["."]
+[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.md_in_html]

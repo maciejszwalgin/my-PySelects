@@ -6,8 +6,5 @@ authors = [
     {name = "Maciej Szwalgin"}
 ]
 dependencies = [
-    "mkdocs>=1.6.1",
-    "mkdocs-material>=9.6.12",
-    "pymdown-extensions>=10.14.3",
-    "mkdocs-include-markdown-plugin>=4.0.4"
+    "zensical>=0.0.57",
 ]

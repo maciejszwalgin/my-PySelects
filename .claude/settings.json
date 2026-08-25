@@ -6,9 +6,9 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python -c 'import sys, json; d = json.load(sys.stdin); f = d.get(\"tool_input\", {}).get(\"file_path\", \"\").replace(chr(92), \"/\"); sys.exit(0 if \"/docs/\" in f and f.endswith(\".md\") else 1)' && uv run mkdocs build --strict",
+            "command": "python -c 'import sys, json; d = json.load(sys.stdin); f = d.get(\"tool_input\", {}).get(\"file_path\", \"\").replace(chr(92), \"/\"); sys.exit(0 if \"/docs/\" in f and f.endswith(\".md\") else 1)' && uv run zensical build --strict",
             "timeout": 30,
-            "statusMessage": "Checking mkdocs strict build..."
+            "statusMessage": "Checking zensical strict build..."
           }
         ]
       }

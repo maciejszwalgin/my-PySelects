@@ -35,7 +35,7 @@ ENV/
 *.swo
 .DS_Store
 
-# MkDocs
+# Zensical
 site/
 
 # Distribution / packaging
