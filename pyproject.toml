@@ -1,10 +1,11 @@
 [project]
 name = "my-pyselects"
-version = "0.1.0"
+version = "0.2.0"
 description = "My personal selection of Python packages I recommend, enjoy, or consider valuable to explore and use."
 authors = [
     {name = "Maciej Szwalgin"}
 ]
+requires-python = ">=3.14"
 dependencies = [
     "zensical>=0.0.57",
 ]

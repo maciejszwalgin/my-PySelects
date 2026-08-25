@@ -61,7 +61,7 @@ sdist = { url = "https://files.pythonhosted.org/packages/b2/97/5d42485e71dfc0781
 
 [[package]]
 name = "my-pyselects"
-version = "0.1.0"
+version = "0.2.0"
 source = { virtual = "." }
 dependencies = [
     { name = "zensical" },
